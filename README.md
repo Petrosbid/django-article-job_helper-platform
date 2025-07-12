@@ -2,7 +2,7 @@
 
 # Django Article & Job Portal
 
-A modular Django project featuring a multi-app architecture for managing articles, job postings, user authentication, and more. This project is designed as a robust starting point for building scalable web applications with Django.
+A persian modular Django project featuring a multi-app architecture for managing articles, job postings, user authentication, and more. This project is designed as a robust starting point for building scalable web applications with Django.
 
 ## Features
 
