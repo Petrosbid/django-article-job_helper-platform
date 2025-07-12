@@ -1,0 +1,39 @@
+  <header class="header">
+    <nav class="boxbar">
+      <!-- <img class="img1" src="../myproject/image/Interactive-ART.png" alt="لوگو"> -->
+      <ul class="bar">
+        <li class="menu_link">
+          <a class="menu_item" href="{% url 'personality_test' %}">تست شخصیت</a>
+        </li>
+        <li class="menu_link">
+          <a class="menu_item" href="{% url 'jobs-info:jobs-info' %}">اطلاعات شغلی</a>
+        </li>
+        <li class="menu_link">
+          <a class="menu_item" href="{% url 'find_job' %}">یافتن شغل</a>
+        </li>
+        <li class="menu_link">
+          <a class="menu_item" href="{% url 'resume_maker' %}">رزومه</a>
+        </li>
+        <li class="menu_link">
+          <a class="menu_item" href="{% url 'articles:articles' %}">مقالات رزومه</a>
+        </li>
+        {% if request.user.is_authenticated  %}
+          <li class="menu_link">
+            <form action="{% url 'logout' %}" method="post" style="display:inline;">
+              {% csrf_token %}
+              <button type="submit" class="menu_item" style="background:none; border:none; color:inherit; cursor:pointer;">
+                خروج از حساب کاربری
+              </button>
+            </form>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+
+      {% if request.user.is_authenticated  %}
+      <h3 style="color: #e6c486; display: inline-block; margin-left: 5px;">سلام {{ request.user.username }} </h3>
+      {% else %}
+          <a class="contant" href="{% url 'login' %}">ورود</a>
+      {% endif %}
+
+  </header>

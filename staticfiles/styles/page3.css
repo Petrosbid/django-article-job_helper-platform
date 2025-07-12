@@ -1,0 +1,109 @@
+@font-face {
+               font-family: "TTNorms";
+               src: url("../fonts/TTNorms-Regular.otf") format("openType");
+           }
+@font-face {
+font-family: "TTNorms Medium";
+src: url("../fonts/TTNorms-Medium.otf") format("openType");
+}
+@font-face {
+font-family: "TTNorms Light";
+src: url("../fonts/TTNorms-Light.otf") format("openType");
+}
+
+@font-face {
+font-family: "Times Roman Italic";
+src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
+}
+/* valiabe for color ect... */
+:root{
+    --blue : #B0623E;
+}
+
+/* Normalize Css */
+
+body {
+  font-family: 'Tahoma', sans-serif;
+  background-color: #10262b;
+  color: #f6e8d5;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+.job-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.job-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.job-section p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.job-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.card {
+  background-color: rgb(216, 180, 130);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px;
+  width: 260px;
+  height: 340px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  color: #10262b;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+footer {
+ background-color: #f8f8f8;
+  padding: 20px;
+   text-align: center;
+   height: 200px;
+   font-family: "Vazir", sans-serif;
+  font-size: 30px;
+  color: #333;
+   border-top: 1px solid #ddd;
+}
+.card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+}
+
+.job {
+  background-color: #10262b;
+  color: #f6e8d5;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job:hover {
+  background-color: #0d1c20;
+}
