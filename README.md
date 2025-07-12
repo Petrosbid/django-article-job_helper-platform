@@ -93,5 +93,3 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 **Feel free to modify this README to better fit your project’s specific features and structure.**
 
 ---
-
-اگر توضیحات بیشتری به فارسی نیاز داری، بگو تا اضافه کنم!
