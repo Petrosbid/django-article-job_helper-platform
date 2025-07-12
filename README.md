@@ -1,6 +1,6 @@
 # django-article-job_helper-platform
 
-# Django Article & Job Portal
+# Persian Django Article & Job Portal
 
 A persian modular Django project featuring a multi-app architecture for managing articles, job postings, user authentication, and more. This project is designed as a robust starting point for building scalable web applications with Django.
 
